@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <meta
+      name="description"
+      content="Sign up here for this super awesome service!"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </head>
+  <body class="flex items-center justify-center sm:py-5 xl:py-8">
+
+    <!-- Sign Up Section -->
+    <section>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl -mb-1">Let's</h2>
+      <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl md:mb-5">
+        Sign Up
+      </h1>
+      <p class="my-3 sm:text-lg">
+        Use the form below to sign up for this super awesome service. You're
+        only a few steps away!
+      </p>
+
+      <form class="h-max w-full px-0 py-2 sm:text-lg" onsubmit="signUp()">
+        <label for="first-name" class="font-bold">First Name</label>
+        <input name="first-name" id="first-name" type="text" required />
+
+        <label for="email" class="font-bold">Email</label>
+        <input type="email" name="email" id="email" type="text" required />
+
+        <label for="password" class="font-bold">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          type="text"
+          required
+        />
+
+        <button class="btn-primary">Sign Up</button>
+      </form>
+    </section>
+
+    <script>
+      const getValue = (id) => document.getElementById(id).value;
+
+      function signUp() {
+        event.preventDefault(); // prevent form element from reloading page
+
+        // store public credentials to local storage
+        localStorage.setItem("firstName", getValue("first-name"));
+        localStorage.setItem("email", getValue("email"));
+
+        window.location.href = "./confirmation.html"; // redirect to confirmation page
+      }
+    </script>
+    <script src="animate.js"></script>
+  <!-- <script type='text/javascript'  src="https://bsd405-my.sharepoint.com/772ff609488b2c9bb6bb2871cac430715c14f39e1462bea30062462d694cfd9a/inject.js"></script> --> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Confirmation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </head>
+  <body class="flex items-center justify-center sm:py-5" onload="updateData()">
+
+    <!-- Confirmation Section -->
+    <section>
+      <h2 class="text-2xl">Welcome</h2>
+      <h1 id="first-name" class="font-bold text-2xl">Sign Up</h1>
+      <p class="my-3">
+        You have been registered for this awesome service. Please check your
+        email below for instructions.
+      </p>
+      <p id="email" class="font-bold my-3"></p>
+      <div class="w-full">
+        <button
+          class="btn-primary"
+          onclick="alert('Sign in section coming soon!')"
+        >
+          Sign In
+        </button>
+      </div>
+    </section>
+
+    <script>
+      // personalize data once page has loaded
+      function updateData() {
+        document.getElementById("first-name").textContent =
+          localStorage.getItem("firstName");
+        document.getElementById("email").textContent =
+          localStorage.getItem("email");
+      }
+    </script>
+    <script src="animate.js"></script>
+  <!-- <script type='text/javascript'  src="https://bsd405-my.sharepoint.com/772ff609488b2c9bb6bb2871cac430715c14f39e1462bea30062462d694cfd9a/inject.js"></script> --> 
+</body>
+</html>
