@@ -13,37 +13,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   </head>
   <body>
-    <!-- Sign Up Section -->
-    <section>
-      <h2 class="text-2xl sm:text-3xl md:text-4xl -mb-1">Let's</h2>
-      <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl md:mb-5">
-        Sign Up
-      </h1>
-      <p class="my-3 sm:text-lg">
-        Use the form below to sign up for this super awesome service. You're
-        only a few steps away!
-      </p>
+    <main>
+      <!-- Sign Up Section -->
+      <section>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl -mb-1">Let's</h2>
+        <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl md:mb-5">
+          Sign Up
+        </h1>
+        <p class="my-3 sm:text-lg">
+          Use the form below to sign up for this super awesome service. You're
+          only a few steps away!
+        </p>
 
-      <form class="h-max w-full px-0 py-2 sm:text-lg" onsubmit="signUp()">
-        <label for="first-name" class="font-bold">First Name</label>
-        <input name="first-name" id="first-name" type="text" required />
+        <form class="h-max w-full px-0 py-2 sm:text-lg" onsubmit="signUp()">
+          <label for="first-name" class="font-bold">First Name</label>
+          <input name="first-name" id="first-name" type="text" required />
 
-        <label for="email" class="font-bold">Email Address</label>
-        <input type="email" name="email" id="email" type="text" required />
+          <label for="email" class="font-bold">Email Address</label>
+          <input type="email" name="email" id="email" type="text" required />
 
-        <label for="password" class="font-bold">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          type="text"
-          required
-        />
+          <label for="password" class="font-bold">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            type="text"
+            required
+          />
 
-        <button class="btn-primary">Sign Up</button>
-      </form>
-    </section>
-
+          <button class="btn-primary">Sign Up</button>
+        </form>
+      </section>
+    </main>
     <script>
       const getValue = (id) => document.getElementById(id).value;
 
