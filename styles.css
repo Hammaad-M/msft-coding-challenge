@@ -465,20 +465,15 @@ form input{
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){
-  form input{
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
   form input{
     padding-left: 0.5rem;
     padding-right: 0.5rem;

@@ -22,7 +22,7 @@ section {
     @apply flex items-center justify-center py-5 xl:py-8;
   }
   form input {
-    @apply my-2 py-0.5 px-1 border-2 border-gray-300 border-solid w-full rounded-md text-black sm:py-1 sm:px-2 md:px-3 md:py-1.5;
+    @apply my-2 px-1 border-2 border-gray-300 border-solid w-full rounded-md text-black py-1 sm:px-2 md:px-3 md:py-1.5;
   }
   .btn-primary {
     @apply hover:shadow-xl relative bg-primary px-4 py-1.5 text-white rounded-md float-right my-2 transition sm:mt-4 md:px-6 md:py-2;
