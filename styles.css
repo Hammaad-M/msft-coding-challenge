@@ -540,6 +540,9 @@ section{
   position: relative;
   margin: auto;
   margin-top: 0px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 75%;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -560,7 +563,7 @@ section{
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
   section{
     width: 50%;
   }

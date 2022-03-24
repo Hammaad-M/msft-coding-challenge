@@ -28,7 +28,7 @@ section {
     @apply hover:shadow-xl relative bg-primary px-4 py-1.5 text-white rounded-md float-right my-2 transition sm:mt-4 md:px-6 md:py-2;
   }
   section {
-    @apply rounded-lg relative m-auto w-3/4 p-5 bg-white text-left sm:px-10 sm:py-8 mt-0 lg:w-1/2 xl:px-12 xl:w-5/12 2xl:w-4/12;
+    @apply rounded-lg relative h-max m-auto w-3/4 md:w-1/2 p-5 bg-white text-left sm:px-10 sm:py-8 mt-0 xl:px-12 xl:w-5/12 2xl:w-4/12;
   }
 }
 
