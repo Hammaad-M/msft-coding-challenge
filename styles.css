@@ -675,6 +675,10 @@ section{
   section {
     transform: scale(90%);
   }
+  body {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (min-width: 640px){
