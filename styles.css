@@ -12,6 +12,11 @@ section {
   box-shadow: 0px 0px 7px gray;
 }
 
+h1, h2, h3, p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .bg-primary {
   background: var(--primary);
 }
